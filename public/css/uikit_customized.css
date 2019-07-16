@@ -1,0 +1,171 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.customized-nav-top {
+    background-color:white !important;
+    border-bottom: rgb(180, 180, 180) solid 1px;
+}
+
+.customized-nav-bottom {
+    background-color:white;
+    box-shadow: 0px -30px 100px grey;
+}
+
+nav li a {
+    color: black !important;
+    text-transform: capitalize !important;
+}
+
+.home-search {
+    background-color: rgb(238, 238, 238);
+    cursor: pointer !important;
+    font-weight: 300;
+}
+
+.customized-search-title {
+    color: rgb(0, 13, 48) !important;
+}
+
+.customized-search-description {
+    color: rgb(153, 153, 153) !important;
+}
+
+.customized-search-bar {
+    border: none !important;
+    border-bottom: rgb(184, 184, 184) 1px solid !important;
+}
+
+.customized-home-title {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.customized-filter-text {
+    padding-right: 50px !important;
+    font-size: 17px !important;
+    color: rgb(153, 153, 153) !important;
+}
+
+a.customized-see-more {
+    color: rgb(153, 153, 153) !important;
+    font-weight: 700 !important;
+    font-size: 17px !important;
+    text-decoration: none !important;
+}
+
+.customized-party-card-title, .customized-dashboard-card-title {
+    color: rgb(0, 13, 48) !important;
+    font-weight: 700 !important;
+    font-size: 21px !important;
+}
+
+a.customized-footer-subtitle {
+    color: rgb(106, 106, 107) !important;
+    font-weight: 700 !important;
+    font-size: 19px !important;
+    text-decoration: none !important;
+}
+
+.customized-footer-title {
+    color: rgb(44, 44, 44) !important;
+    font-weight: 700 !important;
+    font-size: 21px !important;
+}
+
+.customized-footer-item {
+    color: rgb(167, 167, 167) !important;
+    font-weight: 300 !important;
+    font-size: 16px !important;
+    text-decoration: none !important;
+}
+
+.customized-genre-image {
+    text-decoration: none !important;
+}
+
+.customized-genre-text {
+    color: rgb(255, 255, 255) !important;
+    font-weight: 700 !important;
+    font-size: 35px !important;
+    background-color: rgba(38, 34, 36, 0.5) !important;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.customized-festival-header {
+    color: white !important;
+    font-weight: 600 !important;
+    font-size: 35px !important;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.customized-festival-title {
+    color: black !important;
+    font-weight: 700 !important;
+    font-size: 30px !important;
+}
+
+.customized-date-inut {
+    border: none !important;
+    border-bottom: rgb(56, 56, 56) 1px solid !important;
+}
+
+.customized-dashboard-nav {
+    background-color: rgb(57, 54, 79)!important; 
+}
+
+.custimized-dashboard-nav-item {
+    color: white !important;
+}
+
+.customized-dashboard-subnav {
+    background-color: rgb(248, 247, 250) !important;
+}
+
+.customized-party-page-title {
+    color: white !important;
+    font-weight: 700 !important;
+    font-size: 50px !important;
+}
+
+.customized-party-page-description {
+    color: rgb(221,211,211) !important;
+    font-weight: 300 !important;
+    font-size: 25px !important;
+}
+
+.uk-button {
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3) !important;
+}
+
+.customized-background-muted {
+    background-color: aqua !important;
+}
+
+.customized-picture-logo {
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+
+.customized-picture-logo-big {
+    border-radius: 50px;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+
+input.customized-chat-box {
+    background-color: #F8F8F8 !important;
+}
+
+input.customized-chat-box:focus {
+    background-color: #F8F8F8 !important;
+}
+
+.customized-hover {
+    text-underline: none;
+}

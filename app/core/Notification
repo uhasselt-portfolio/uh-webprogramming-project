@@ -1,0 +1,56 @@
+<?php
+
+require_once "./app/models/WaitingList.php";
+require_once "./app/models/Tickets.php";
+
+class Notification {
+
+    public static function notifyWaitingList($partyID, $messageID) {
+        $tickets = Tickets::getTickets($partyID);
+
+        foreach ($tickets as $ticket) {
+            $accountsOnWaitingList = WaitingList::getWaiters($ticket->ticket_id);
+
+            for ($i = 0; $i < count($accountsOnWaitingList); $i++) {
+                $accountID = $accountsOnWaitingList[$i]->account_id;
+                Notifications::addNotification($partyID, $accountID, $messageID, "party.php?party=" . $partyID);
+            }
+        }
+    }
+
+    public static function notifyPurchasers($partyID, $messageID) {
+        $tickets = Tickets::getTickets($partyID);
+
+        foreach ($tickets as $ticket) {
+            $accountsWhoBoughtTicket = Tickets::getUsersWhoBoughtTicket($ticket->ticket_id);
+
+            for($i = 0; $i < count($accountsWhoBoughtTicket); $i++) {
+                $accountID = $accountsWhoBoughtTicket[$i]->account_id;
+                Notifications::addNotification($partyID, $accountID, $messageID, "party.php?party=" . $partyID);
+            }
+        }
+    }
+
+    public static function notifyPurchasersAndWaitingList($partyID, $messageWaitingListID, $messagePurchaserID) {
+        $tickets = Tickets::getTickets($partyID);
+
+        foreach ($tickets as $ticket) {
+            $accountsWhoBoughtTicket = Tickets::getUsersWhoBoughtTicket($ticket->ticket_id);
+
+            for($i = 0; $i < count($accountsWhoBoughtTicket); $i++) {
+                $accountID = $accountsWhoBoughtTicket[$i]->account_id;
+                Notifications::addNotification($partyID, $accountID, $messagePurchaserID, "party.php?party=" . $partyID);
+            }
+
+            $accountsOnWaitingList = WaitingList::getWaiters($ticket->ticket_id);
+
+            for ($i = 0; $i < count($accountsOnWaitingList); $i++) {
+                $accountID = $accountsOnWaitingList[$i]->account_id;
+                Notifications::addNotification($partyID, $accountID, $messageWaitingListID, "party.php?party=" . $partyID);
+            }
+        }
+    }
+}
+
+
+?>

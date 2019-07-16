@@ -1,0 +1,7 @@
+1. Parties pagina ==> Huidige datum in datepicker
+2. Login en register pagina weinig input velden, zodat aanmeld drempel lager is
+3. Success en fail kleuren toegevoegd wanneer form submit, makkelijk zichtbaar wanneer iets fout gaat.
+4. Grote fail pop-up die duidelijk in beeld komt zonder de rest van de content te storen
+5. Als account setup nog niet gedaan is kan de gebruiker altijd zonder problemen hier mee verder gaan door terug in te loggen of in de navigatie balk op setup process te k klikken
+6. Instellingen worden automatisch opgeslagen + real time input checking
+7. Foto's op fuif pagina's kunnen vergroot worden voor slechtziende
